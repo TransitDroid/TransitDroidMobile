@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/rootRL" 
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+                 <include layout="@layout/actionbar_menu" android:id="@+id/actionBarMenu"/>
+
+    
+    <RelativeLayout
+        android:id="@+id/layoutToMove"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/actionBar"
+        android:background="#D8D8D8">
+
+		<FrameLayout
+		    android:id="@+id/frameToMove"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:layout_alignParentLeft="true"
+		    android:layout_below="@+id/actionBar"
+		    android:layout_marginLeft="10dp"
+		    android:layout_marginTop="10dp"
+		    android:layout_marginRight="10dp"
+		    android:layout_marginBottom="10dp"
+		    android:background="#F8F8F8" >
+
+			<include
+		        android:id="@+id/logo_tab"
+		        android:layout_width="285dp"
+		        layout="@layout/logo_tab" />
+
+			<TextView
+			    android:id="@+id/textView1"
+			    android:layout_width="240dp"
+			    android:layout_height="wrap_content"
+			    android:layout_marginLeft="35dp"
+			    android:layout_marginRight="35dp"
+			    android:layout_marginTop="85dp"
+			    android:text="@string/notice"
+			    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+			<TextView
+			    android:id="@+id/textView2"
+			    android:layout_width="194dp"
+			    android:layout_height="wrap_content"
+			    android:layout_marginLeft="35dp"
+			    android:layout_marginRight="35dp"
+			    android:layout_marginTop="135dp"
+			    android:text="@string/notice_message"
+			    android:textAppearance="?android:attr/textAppearanceMedium" />
+            
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="218dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginTop="350dp"
+                android:text="@string/notice_form"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textStyle="italic" />
+
+            <Button
+                android:id="@+id/disclaim"
+                android:layout_width="219dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginTop="390dp"
+                android:text="Continue" />
+            
+		</FrameLayout>
+        
+    </RelativeLayout>
+    
+</RelativeLayout>

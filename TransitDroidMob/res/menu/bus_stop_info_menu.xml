@@ -1,0 +1,7 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<item android:id="@+id/stm_mobile" android:icon="@drawable/ic_menu_stmmobile"
+		android:title="@string/see_in_stm_mobile_web_site"
+		android:alphabeticShortcut="s" />
+
+</menu>

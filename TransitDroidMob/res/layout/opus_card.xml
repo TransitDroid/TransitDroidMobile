@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/rootRL" 
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+                 <include layout="@layout/actionbar_menu" android:id="@+id/actionBarMenu"/>
+<ListView
+        android:id="@+id/listMenu"
+        android:layout_below="@+id/actionBarMenu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:divider="#282828"
+        android:dividerHeight="1dip"
+        android:background="#3F3F3F"
+        android:fadingEdge="none"
+        android:listSelector="@drawable/list_selector">
+
+    </ListView>
+    
+    <RelativeLayout
+        android:id="@+id/layoutToMove"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/actionBar">
+        
+        <include layout="@layout/actionbar_layout" android:id="@+id/actionBar"/>
+        
+        <ImageButton
+            android:id="@+id/menuButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignBottom="@+id/actionBar"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:onClick="openCloseMenu"
+			android:src="@drawable/menu"
+			android:background="@android:color/transparent" />
+
+		<Button
+		    android:id="@+id/separator"
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@+id/menuButton"
+            android:background="@drawable/custom_button_black" />
+		
+		<FrameLayout
+		    android:id="@+id/frameLayout"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:layout_below="@+id/actionBar"
+		    android:background="#D2D2D2" >
+
+			<ImageView
+			    android:id="@+id/opusImage"
+			    android:layout_width="360dp"
+			    android:layout_height="fill_parent"
+			    android:src="@drawable/opus2" />
+		    
+		    </FrameLayout>
+        
+    </RelativeLayout>
+</RelativeLayout>

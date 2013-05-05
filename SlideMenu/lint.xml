@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="NewApi">
+        <ignore path="src\com\coboltforge\slidemenuexample\AFragment.java" />
+        <ignore path="src\com\coboltforge\slidemenuexample\MainActivity.java" />
+        <ignore path="src\com\coboltforge\slidemenuexample\MobileAccounts.java" />
+        <ignore path="src\com\coboltforge\slidemenuexample\Purchase.java" />
+        <ignore path="src\com\transitdroid\transitdroid_emulator\CPOApplet.java" />
+        <ignore path="src\com\transitdroid\transitdroid_emulator\MainActivity.java" />
+        <ignore path="src\com\transitdroid\transitdroid_emulator\OpusActivity.java" />
+    </issue>
+    <issue id="ResourceAsColor">
+        <ignore path="src\com\coboltforge\slidemenuexample\MainActivity.java" />
+        <ignore path="src\com\coboltforge\slidemenuexample\MainActivity_old.java" />
+        <ignore path="src\com\transitdroid\transitdroid_emulator\MainActivity.java" />
+        <ignore path="src\com\transitdroid\transitdroid_emulator\OpusActivity.java" />
+    </issue>
+</lint>

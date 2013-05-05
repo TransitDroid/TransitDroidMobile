@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/rootRL" 
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+                 <include layout="@layout/actionbar_menu" android:id="@+id/actionBarMenu"/>
+<ListView
+        android:id="@+id/listMenu"
+        android:layout_below="@+id/actionBarMenu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:divider="#282828"
+        android:dividerHeight="1dip"
+        android:background="#3F3F3F"
+        android:fadingEdge="none"
+        android:listSelector="@drawable/list_selector">
+
+    </ListView>
+    
+    <RelativeLayout
+        android:id="@+id/layoutToMove"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/actionBar"
+        android:background="#D8D8D8">
+        
+        <include layout="@layout/actionbar_layout" android:id="@+id/actionBar"/>
+        
+        <ImageButton
+            android:id="@+id/menuButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignBottom="@+id/actionBar"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:onClick="openCloseMenu"
+			android:src="@drawable/menu"
+			android:background="@android:color/transparent" />
+
+		<Button
+		    android:id="@+id/separator"
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@+id/menuButton"
+            android:background="@drawable/custom_button_black" />
+
+		<FrameLayout
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentLeft="true"
+		    android:layout_below="@+id/actionBar"
+		    android:layout_marginLeft="10dp"
+		    android:layout_marginRight="10dp"
+		    android:layout_marginTop="10dp"
+		    android:background="#F8F8F8" >
+
+			<include
+		        android:id="@+id/logo_tab"
+		        android:layout_width="285dp"
+		        layout="@layout/logo_tab" />
+
+			<ImageView
+			    android:id="@+id/profile_pic"
+			    android:layout_width="153dp"
+			    android:layout_height="133dp"
+			    android:layout_marginLeft="160dp"
+			    android:layout_marginTop="35dp"
+			    android:layout_marginBottom="35dp"
+			    android:src="@drawable/profile" />
+
+			<TextView
+			    android:id="@+id/display_name"
+			    android:layout_width="181dp"
+			    android:layout_height="wrap_content"
+			    android:layout_marginLeft="30dp"
+			    android:layout_marginTop="80dp"
+			    android:text="Austin Takam"
+			    android:textAppearance="?android:attr/textAppearanceMedium"
+			    android:textStyle="bold" />
+
+			<TextView
+			    android:id="@+id/display_city"
+			    android:layout_width="163dp"
+			    android:layout_height="wrap_content"
+			    android:layout_marginLeft="30dp"
+			    android:layout_marginTop="110dp"
+			    android:text="Montreal, QC" />
+		    
+		</FrameLayout>
+		
+		<FrameLayout
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:layout_alignParentLeft="true"
+		    android:layout_below="@+id/profile_pic"
+		    android:layout_marginLeft="10dp"
+		    android:layout_marginTop="270dp"
+		    android:layout_marginRight="10dp"
+		    android:layout_marginBottom="10dp"
+		    android:background="#F8F8F8" >
+
+			<TextView
+			    android:id="@+id/textView1"
+			    android:layout_width="320dp"
+			    android:layout_height="wrap_content"
+			    android:layout_marginLeft="10dp"
+			    android:layout_marginRight="10dp"
+			    android:layout_marginTop="50dp"
+			    android:text="@string/account_redir"
+			    android:textAlignment="center"
+			    android:textAppearance="?android:attr/textAppearanceMedium"
+			    android:typeface="serif" />
+
+			<TextView
+			    android:id="@+id/textView2"
+			    android:layout_width="370dp"
+			    android:layout_height="wrap_content"
+			    android:layout_marginLeft="10dp"
+			    android:layout_marginRight="10dp"
+			    android:layout_marginTop="90dp"
+			    android:text="@string/url"
+			    android:textAlignment="center"
+			    android:textAppearance="?android:attr/textAppearanceMedium"
+			    android:textColor="#202020"
+			    android:textStyle="italic" />
+
+		</FrameLayout>
+        
+    </RelativeLayout>
+    
+</RelativeLayout>

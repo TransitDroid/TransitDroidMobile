@@ -1,0 +1,22 @@
+<resources>
+
+    <string name="app_name">TransitDroid Mobile</string>
+    <string name="item_one">Menu Item One</string>
+    <string name="item_two">Menu Item Two</string>
+    <string name="item_three">Menu Item Three</string>
+    <string name="item_four">Menu Item Four</string>
+    <string name="menubutton">If you do not happen to have an ActionBar, click here to activate the SlideMenu!</string>
+    <string name="photo">Picture</string>
+    <string name="username">UserName</string>
+    <string name="settings">Settings</string>
+    <string name="opus_setting">OPUS CARD</string>
+    <string name="theme_text">Choose Theme</string>
+    <string name="profile_setting">PROFILE</string>
+    <string name="picture_show">Show Picture</string>
+    <string name="account_setting">ACCOUNT</string>
+    <string name="username_label">Username</string>
+    <string name="password_label">Password</string>
+    <string name="display_name">Display Name</string>
+    <string name="settings_save">Save Changes</string>
+
+</resources>

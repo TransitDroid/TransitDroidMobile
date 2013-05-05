@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.41"
+        android:padding="20dp" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/opus_setting"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/view1"
+            android:layout_below="@+id/view1"
+            android:layout_marginTop="14dp"
+            android:text="@string/theme_text"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView2"
+            android:layout_below="@+id/textView2" />
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/spinner1"
+            android:layout_below="@+id/spinner1"
+            android:layout_marginTop="20dp"
+            android:text="@string/profile_setting"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <View
+            android:id="@+id/View01"
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:layout_alignLeft="@+id/TextView01"
+            android:background="#ffffff" />
+
+        <View
+            android:id="@+id/View02"
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:layout_alignBottom="@+id/TextView02"
+            android:layout_alignLeft="@+id/TextView02"
+            android:background="#ffffff" />
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:layout_alignBottom="@+id/textView1"
+            android:layout_alignLeft="@+id/textView1"
+            android:background="#ffffff" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/TextView02"
+            android:layout_below="@+id/TextView02"
+            android:layout_marginTop="17dp"
+            android:text="@string/username_label"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <View
+            android:id="@+id/View03"
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_alignLeft="@+id/textView4"
+            android:layout_below="@+id/textView4"
+            android:layout_marginTop="16dp"
+            android:background="#ffffff" />
+
+        <TextView
+            android:id="@+id/TextView03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/TextView01"
+            android:layout_below="@+id/editText1"
+            android:layout_marginTop="23dp"
+            android:text="@string/password_label"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <View
+            android:id="@+id/View04"
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:layout_alignBottom="@+id/TextView01"
+            android:layout_alignLeft="@+id/TextView01"
+            android:background="#ffffff" />
+
+        <View
+            android:id="@+id/View05"
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:layout_alignLeft="@+id/TextView01"
+            android:layout_alignTop="@+id/TextView01"
+            android:background="#ffffff" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/View04"
+            android:layout_alignTop="@+id/View04"
+            android:text="ToggleButton" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/TextView01"
+            android:layout_below="@+id/TextView01"
+            android:text="@string/picture_show"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView4"
+            android:layout_alignBottom="@+id/textView4"
+            android:layout_alignLeft="@+id/editText2"
+            android:layout_alignRight="@+id/View03"
+            android:ems="10" />
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/View03"
+            android:layout_below="@+id/View03"
+            android:layout_toRightOf="@+id/TextView02"
+            android:ems="10"
+            android:inputType="textPassword" />
+
+        <View
+            android:id="@+id/View06"
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="#ffffff" />
+
+        <View
+            android:id="@+id/View07"
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:layout_alignLeft="@+id/TextView02"
+            android:layout_alignTop="@+id/TextView02"
+            android:background="#ffffff" />
+
+        <TextView
+            android:id="@+id/TextView04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/View07"
+            android:layout_below="@+id/toggleButton1"
+            android:layout_marginTop="15dp"
+            android:text="@string/display_name"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <View
+            android:id="@+id/View08"
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_alignBottom="@+id/toggleButton1"
+            android:layout_alignLeft="@+id/TextView04"
+            android:background="#ffffff" />
+
+        <EditText
+            android:id="@+id/EditText01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TextView04"
+            android:layout_alignBottom="@+id/TextView04"
+            android:layout_toRightOf="@+id/textView1"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/TextView02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView3"
+            android:layout_below="@+id/EditText01"
+            android:layout_marginTop="28dp"
+            android:text="@string/account_setting"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/editText2"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="18dp"
+            android:text="@string/settings_save" 
+            android:onClick="saveSettings"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

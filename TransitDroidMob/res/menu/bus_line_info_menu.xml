@@ -1,0 +1,7 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:id="@+id/map" android:icon="@drawable/ic_menu_bus_line_plan"
+		android:title="@string/see_bus_line_plan" />
+	<item android:id="@+id/direction" android:icon="@android:drawable/ic_menu_compass"
+		android:title="@string/change_direction" />
+
+</menu>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <TabHost android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/tabHost"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#505050"
+    >
+    <TabWidget
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@android:id/tabs"
+    />
+     <FrameLayout
+     android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@android:id/tabcontent"
+     >
+     <LinearLayout
+     android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/tab1"
+    android:orientation="vertical"
+    android:paddingTop="100px"
+     >
+	     <LinearLayout
+	     android:layout_width="fill_parent"
+	    android:layout_height="470dp"
+	    android:id="@+id/tab10"
+	    android:orientation="vertical"
+	    android:paddingTop="60px"
+	    android:background="#D8D8D8"
+	     >  
+	    	<TextView  
+		    android:layout_width="fill_parent" 
+		    android:layout_height="100px" 
+		    android:text="This is tab 1"
+		    android:id="@+id/txt3"
+		    />
+	     </LinearLayout>  
+    
+     </LinearLayout>
+     
+     <LinearLayout
+     android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/tab2"
+    android:orientation="vertical"
+    android:paddingTop="100px"
+     >
+     	<LinearLayout
+	     android:layout_width="fill_parent"
+	    android:layout_height="470dp"
+	    android:id="@+id/tab20"
+	    android:orientation="vertical"
+	    android:paddingTop="60px"
+	    android:background="#D8D8D8"
+	     >  
+	    	<TextView  
+		    android:layout_width="fill_parent" 
+		    android:layout_height="100px" 
+		    android:text="This is tab 2"
+		    android:id="@+id/txt3"
+		    />
+	     </LinearLayout> 
+   
+     </LinearLayout>
+     
+      <LinearLayout
+     android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/tab3"
+    android:orientation="vertical"
+    android:paddingTop="100px"
+     >
+     	<LinearLayout
+	     android:layout_width="fill_parent"
+	    android:layout_height="470dp"
+	    android:id="@+id/tab20"
+	    android:orientation="vertical"
+	    android:paddingTop="60px"
+	    android:background="#D8D8D8"
+	     >  
+	    	<TextView  
+		    android:layout_width="fill_parent" 
+		    android:layout_height="100px" 
+		    android:text="This is tab 3"
+		    android:id="@+id/txt3"
+		    />
+	     </LinearLayout> 
+   
+     </LinearLayout>
+     </FrameLayout>
+    
+    </TabHost>
